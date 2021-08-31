@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Companies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <% if(type=== "get"){%>
+            <form action="/<%= params %> " method="post" style="margin: 20%;">
+                <input type="text" name="company" id="" class="form-control" placeholder="Enter Company">
+                <button type="submit" class="form-control btn btn-primary">Submit</button>
+            </form>
+        <% }else if(type=== "post"){ %> 
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">number_of_empl</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <th scope="row"><%= companylist._id %> </th>
+                            <td><%= companylist.companyName %> </td>
+                            <td><%= companylist.number_of_empl %> </td>
+                        </tr>
+                </tbody>
+            </table>
+        <% } %> 
+    </div>
+</body>
+</html>

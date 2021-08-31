@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        input{
+            margin: 10px;
+        }
+        h1{
+            color: rgb(94, 94, 97);
+        }
+        h3{
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="text-align: center;margin:20% auto;">
+        <h1>Please choose an option</h1>
+        <form action="/" method="post">
+            <div class="row">
+                <div class="col">
+                    <input type="radio" name="group" id="1" value="company">
+                    <label for="1"><b>Show Compnaies Table</b></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="radio" name="group" id="2" value="employee">
+                    <label for="2"><b>Show Employees Table</b></label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <h3>To get a particular companys details, give the company name as parameter to url Ex:/Amazon</h3>
+    </div>
+</body>
+
+</html>
