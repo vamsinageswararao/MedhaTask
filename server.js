@@ -26,7 +26,7 @@ const Company=mongoose.model("companys",companySchema);
 const Employee=mongoose.model("employees",employeeSchema);
 
 
-app.get("/",(req,res)=>{
+app.get('/',(req,res)=>{
     
     res.render("home")
 });
